@@ -14,7 +14,7 @@ This is a Gym advertisement webpage
 To run the code, you need to first download the html along with css and download all the remaining images and files to successfully execute the code without any errors.
 The swe.html is a home page for Work It- Gym and fitness which includes Menu, Home, Amenities and Location. 
 Homepage for the webpage is swe.html which contains all the relevant information pages with all the things 
-which the professor told to incorporate. For this I have used reference from 'https://www.w3schools.com/w3css/tryw3css_templates_cafe.htm'
+which the professor told to incorporate. 
 I uploaded the required files on S3- aws management console to host the static webpage
 The error.html is the error page which gets displayed if the home page is not working properly and also when you click on the save appointment button . It is linked with error.css which contains the enhancements of error.html.
 
