@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<title>Work It - Gym And Fitness</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Gymhomepage.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">AMENITIES</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">LOCATION</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6am to 9pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black" style="font-size:90px">WORK IT<br>Gym & Fitness Club</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Evesham , Lee Highway</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE GYM</span></h5>
+    <p>Work It Gym International, Inc. is an American chain of international co-ed fitness centers originally started by Joe Seran in Venice Beach, California. This gym offers a variety of cardio and strength training equipment as well as group exercise programs. Its headquarters have since relocated to Dallas, Texas.</p>
+    <p>Joe Seran opened the first WI's Gym in August 1965, in Venice Beach, California, long before the modern day health club existed. Featuring homemade equipment and dubbed "the Mecca of bodybuilding", it was frequented by Arnold Schwarzenegger and Dave Draper.In 1970, Gold sold the at-the-time failing gym to Bud Danits, most commonly known as an antique dealer, and Dave Saxe, a jeweler. They ran the gym for almost two years together as co-owners, and when they realized that this operation was not plausible for them, they were going to close it and reopen the location as an antiques shop. They offered it to a frequently visiting gym member, Ken Sprague, who purchased it in late 1971, and Gold's was saved as a gym. Sprague was the first owner of Gold's to actually sponsor and hold bodybuilding competitions, and his promotional skills and film industry contacts helped build the establishment's profile.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>“Less sugar, more fruit. Less soda, more water. Less driving, more walking. Less worry, more sleep. Less words, more action.”</i></p>
+      <p>Trainer, Fitness Instructor: David Goggins</p>
+    </div>
+    <img src="g1.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 6am to 9pm.</p>
+    <p><strong>Address:</strong> 15 Evesham , Lee Highway</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">AMENITIES</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Memberships</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Equipments</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Family Plan</h5>
+      <p class="w3-text-grey">Family membership includes cardio, tredmill, yoga patterns and access to all gymming equipments 60.50$ per month</p><br>
+    
+      <h5>Couple Workout Plan</h5>
+      <p class="w3-text-grey">Couple workout plan includes access to all gym amenities except for the swimming pool. It includes diet plan and flexible time schedules 35$ per month</p><br>
+    
+      <h5>Kids Gymming</h5>
+      <p class="w3-text-grey"> Kids membership includes a Kid trainer and access to all gym mats and warm up goodies 17.50$ per month</p><br>
+    
+      <h5>Yoga Plan</h5>
+      <p class="w3-text-grey">Yoga Plan includes a Yoga trainer teaching 10 yogasanas per week and includes diet plan according to the bodt structure 17.50$ per month</p><br>
+    
+      <h5>Aqua And Zumba</h5>
+      <p class="w3-text-grey">Aqua And Zumba is a new combination our gym is offering. This membership includes a reserved lane on the specific time for the person and a Zumba instructor showing moves for wieghtloss 18.50$ per month</p>
+    </div>
+
+    <div id="Equipments" class="w3-container menu w3-padding-48 w3-card">
+      <h5>CARDIO</h5>
+      <p class="w3-text-grey">Cardio and Treddmill</p><br>
+      <img src="cardio.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+    </div>  
+    <img src="gymequip.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at :</p><br>
+    <p>Email : workitdallas@gmail.com<p><br>
+    <p>Contact :(+1) 576-788-9897<p><br>
+    <p><strong>Reserve an appointment today itself with our best trainers!</strong>:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your Full Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Count" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" onclick="window.location.href='error.html'">SEND APPOINTMENT </button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Maitreyi's Project</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

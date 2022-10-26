@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                STUDENT SURVEY FORM
+            </h1>
+            <p id="description">
+                Honest survey is highly valued for future references!
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">First Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your first name" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Last Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your last name" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Street Address</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your full address" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">City</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name of the city you live in" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">State</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name of the state you live in " required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Zip Code</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your zip code " required>
+            </div>
+            <!-- end of text section -->
+
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="tel">Telephone</label>
+                <input type="text" name="text" id="num" class="formControl" placeholder="Enter your number" required>
+            </div>
+            <!-- end of Number section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+            </div>
+            <!--  end of number section -->
+            <label for="start">Date:</label>
+            <input type="date" id="start" name="trip-start" 
+             value="2018-07-22" class="formControl"
+             ><br><br>
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="raffle">Raffle for Free Lottery!</label>
+                <input type="text" name="phone" id="phone" class="formControl" placeholder="Enter comma separated numbers in between 1-100" required>
+            </div>
+            <!-- end of Number section -->
+            <!-- select section -->
+            <div class="form-group">
+                <p id="quest">What is the likelihood of you recommending this school to other prospective students</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select Likelihood</option>
+                    <option value="student">Very Likely</option>
+                    <option value="teacher">Likely</option>
+                    <option value="job">Unlikely</option>
+                   
+                </select>
+            </div>
+            <!-- end of select section -->
+
+            <!-- radio button section -->
+            <div class="form-group">
+                <p id="quest">What made you show interest in the University</p>
+                <label for="">
+                    <input type="radio" name="source" value="freinds"
+                    class="inputRadio"
+                    checked> Friends
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputRadio"
+                    >TV Ads
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="social-media"
+                    class="inputRadio"
+                    > Internet
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="other"
+                    class="inputRadio"
+                    > Other
+                </label>
+            </div>
+            <!-- end of radio button -->
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest">What is the most liked thing about the campus? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Stud"> Students
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="loc"> Location
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="camp">  Campus
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="atmos"> Atmosphere
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="dr"> Dorm Room
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="sport"> Sports
+                </label>
+                    
+            </div>
+            <!-- End of checkbox section -->
+
+            <!-- Textarea section -->
+            <div class="form-group">
+                <p id="quest">Additional Comments</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your valuable comments here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button><br>
+                <button type="cancel" id="cancel" class="btn">
+                Cancel </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
